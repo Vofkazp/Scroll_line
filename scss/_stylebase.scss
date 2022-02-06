@@ -1,14 +1,20 @@
 body {
   font: 18px/20px Arial;
+  color: #fff;
+  background: #0e1538;
 }
 .container {
   width: 700px;
   margin: 20px auto;
   p {
-    padding: 20px 5px 10px;
+    padding: 20px 10px;
+    margin: 30px 0;
+    border: 1px solid #ffc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(255,255,255,.5);
   }
   p:nth-child(odd) {
-    background: #c7f09f;
+    background: #173837;
   }
 }
 .scroll-btn {
@@ -38,18 +44,6 @@ body {
   left: 0;
   top: 0;
   height: 3px;
-  background: #bd7d07;
-}
-@include media("min", "xl") {
-}
-@include media("within", "xl") {
-}
-
-@include media("within", "lg") {
-}
-@include media("within", "md") {
-}
-@include media("within", "sm") {
-}
-@include media("within", "xs") {
+  background: linear-gradient(to right, red, orange);
+  box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.5);
 }
